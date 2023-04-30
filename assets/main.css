@@ -56,6 +56,7 @@ body>main button span:first-child {
   fill: #bbb;
   width: 2rem;
   height: 2rem;
+  filter: grayscale();
   background-color: var(--color2);
   padding: 1rem;
   border-radius: 100%;
