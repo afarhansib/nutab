@@ -1,0 +1,176 @@
+:root {
+  --color2: #222;
+  --colorbg: #35363a;
+}
+
+body {
+  background-color: var(--colorbg);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+body>main {
+  flex-grow: 1;
+  display: grid;
+  place-items: center;
+}
+
+body>main div {
+  display: flex;
+  gap: 1rem;
+}
+
+body>main a,
+body>main button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body>main a:hover,
+body>main button:hover {
+  box-shadow: 0 0 1px 1px #777;
+}
+
+body>main button {
+  display: grid;
+  place-items: center;
+}
+
+body>main a img,
+body>main button span:first-child {
+  fill: #bbb;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color2);
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+body>main button span:first-child {
+  display: grid;
+  place-items: center;
+}
+
+header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 400px;
+  top: 6rem;
+}
+
+blockquote {
+  color: #999;
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+blockquote>div {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+blockquote button {
+  border: none;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+}
+
+blockquote button:hover {
+  box-shadow: 0 0 0 1px #777;
+}
+
+blockquote button>svg {
+  width: 1.2rem;
+  fill: #777;
+}
+
+body>main button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: smaller;
+  padding: 1rem;
+  color: #777;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-style: italic;
+}
+
+body>div {
+  position: fixed;
+  background-color: #0007;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body>div main {
+  border-radius: 0.5rem;
+  width: 80%;
+  max-width: 300px;
+  background-color: var(--color2);
+  padding: 1rem;
+  color: white;
+}
+
+body>div form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem
+}
+
+body>div form {
+  margin-bottom: 1rem;
+}
+
+body>div main>div {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: auto auto;
+}
+
+body>div main>div>button,
+body>div form input {
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+body>div main>div>button {
+  background-color: var(--colorbg);
+  color: white
+}
