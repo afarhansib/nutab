@@ -17,7 +17,7 @@ window.onload = async () => {
 
   for (const site of data) {
     // console.log()
-    document.querySelector('body>main>div>button').insertAdjacentHTML("beforebegin", composeHTML(site))
+    document.querySelector('body>main>div>div:last-child>button').insertAdjacentHTML("beforebegin", composeHTML(site))
   }
 }
 
@@ -57,4 +57,11 @@ document.querySelector('body>div>main>div>button:last-child').onclick = (e) => {
 
 document.querySelector('blockquote button').onclick = (e) => {
   getQuote()
+}
+
+document.querySelector('main>div>form').onsubmit = e => {
+  const query = document.querySelector('main>div>form>input').value
+  // alert(query)
+  window.location.href = 'https://google.com/search?q=' + escape(query)
+  e.preventDefault()
 }
